@@ -4,14 +4,9 @@ let button = document.querySelector("#btn");
 let select = document.querySelector("#form");
 let result = document.querySelector("#result");
 let switchValue = 0;
-switchValue = select.value;
-
-select.addEventListener("change", function () {
-   switchValue = select.options[select.selectedIndex].value;
-   console.log(switchValue);
-});
 
 button.addEventListener("click", function () {
+   switchValue = select.value;
    let a = +first.value;
    let b = +second.value;
    if (switchValue == 1) {
