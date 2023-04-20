@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="./style.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div
+         class="d-flex flex-column align-items-center justify-content-center mt-5"
+         style="height: 100%"
+      >
+         <div
+            class="calculator d-flex align-items-center justify-content-center"
+         >
+            <input
+               class="rounded mx-4"
+               id="first"
+               type="number"
+               style="width: 70px"
+            />
+            <!-- 下拉選單 -->
+            <select
+               id="form"
+               class="form-select form-select-sm rounded mx-4"
+               aria-label="Default select example"
+            >
+               <option value="1">+</option>
+               <option value="2">-</option>
+               <option value="3">X</option>
+               <option value="4">%</option>
+            </select>
+
+            <input
+               class="rounded mx-4"
+               id="second"
+               type="number"
+               style="width: 70px"
+            />
+            <p class="mb-0 mx-4">=</p>
+            <p id="result" class="mb-0 mx-4"></p>
+         </div>
+         <button id="btn" class="btn btn-secondary px-4 py-0 mt-4">計算</button>
+      </div>
+      <script
+         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"
+         integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+         crossorigin="anonymous"
+      ></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+         integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+         crossorigin="anonymous"
+      ></script>
+      <script src="./main.js"></script>
+   </body>
+</html>
